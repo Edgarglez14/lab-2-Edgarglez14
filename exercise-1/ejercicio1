@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    float num[3];
+    float M=10000000000;
+    float m=0;
+
+    cout << "primer numero:  " << endl;
+    cin >> num[0];
+    cout << "segundo numero:  " << endl;
+    cin >> num[1];
+    cout << "tercer numero:  " << endl;
+    cin >> num[2];
+
+    for(int i=0 ; i<3; i++)
+    {
+        if (num[i]>M)
+        {
+            M=num[i];
+        }
+        if (num[i]<m)
+        {
+            m=num[i];
+        }
+    }
+
+    cout << "La suma es:  " << num[0] + num[1] + num[2] << endl;
+    cout << "El promedio es:  " << (num[0] + num[1] + num[2]) / 3 << endl;
+    cout << "El producto es:  " << num[0] * num[1] * num[2] << endl;
+    cout << "El mas pequeño:  " << m << endl;
+    cout << "El mas grande:  " << M << endl;
+
+    return 0;
+}
